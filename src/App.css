@@ -1,0 +1,36 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* Black background */
+  color: #00ff00; /* Green text color */
+}
+
+/* Center the search bar */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  flex-direction: column;
+}
+
+.search-bar-container {
+  width: 100%;
+  text-align: center;
+}
+
+.search-bar {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #733310; /* Green border */
+  background-color: #fff; /* White background for input */
+  color: #000; /* Black text color */
+}
+
+.search-bar::placeholder {
+  color: #808080; /* Grey placeholder text */
+}
