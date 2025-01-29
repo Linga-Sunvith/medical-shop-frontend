@@ -1,18 +1,17 @@
-/* Global styles */
+/* General App Container */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff; /* Black background */
-  color: #00ff00; /* Green text color */
+  background-color: #ffffff;
+  color: #00ff00;
 }
 
-/* Center the search bar */
 .app-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
   flex-direction: column;
 }
 
@@ -26,11 +25,47 @@ body {
   padding: 10px;
   font-size: 16px;
   border-radius: 5px;
-  border: 2px solid #733310; /* Green border */
-  background-color: #fff; /* White background for input */
-  color: #000; /* Black text color */
+  border: 2px solid #733310;
+  background-color: #fff;
+  color: #000;
 }
 
 .search-bar::placeholder {
-  color: #808080; /* Grey placeholder text */
+  color: #808080;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-top: 20px;
+}
+
+form input {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #733310;
+}
+
+form button {
+  padding: 10px;
+  background-color: #00ff00;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+form button:hover {
+  background-color: #008000;
+}
+
+.error-message {
+  color: red;
+}
+
+.success-message {
+  color: green;
 }
